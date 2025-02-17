@@ -1,5 +1,28 @@
 ---
+import HolyGrail from "../components/grids/HolyGrail.astro";
+import MainGridTile from "../components/MainGridTile.astro";
 import Layout from "../layouts/Layout.astro";
+
+type MainGridTileData = {
+	name: string;
+	Component: any;
+	link: string;
+};
+
+const grids: MainGridTileData[] = [
+	{ name: "Holy Grail", Component: HolyGrail, link: "/holy-grail" },
+	{ name: "Sidebar", Component: "", link: "/sidebar" },
+	{ name: "Masonry", Component: "", link: "/right-sidebar" },
+	{ name: "Columns", Component: "", link: "/columns" },
+];
 ---
 
-<Layout> Grid here </Layout>
+<Layout>
+	<section class="grid-container">
+		{
+			grids.map(({ name, Component, link }) => {
+				return <MainGridTile name={name} Component={Component} link={link} />;
+			})
+		}
+	</section>
+</Layout>

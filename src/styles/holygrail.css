@@ -1,0 +1,26 @@
+.holy-grail {
+    border-collapse: collapse;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "left body right"
+    "footer footer footer"
+}
+
+.holy-grail.preview {
+    border : 1px solid black;
+    padding: 24px;
+    margin-bottom: 8px;
+}
+
+.holy-grail > * {
+    border : 1px solid black;
+}
+
+.holy-grail header { grid-area: header; }
+.holy-grail aside:first-of-type { grid-area: left; }
+.holy-grail main { grid-area: body; }
+.holy-grail aside:last-of-type { grid-area: right; }
+.holy-grail footer { grid-area: footer; }

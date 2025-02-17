@@ -1,0 +1,17 @@
+---
+import "../styles/tile.css";
+const { name, Component, link } = Astro.props;
+---
+
+<a href={link} class="main-grid-tile-link">
+	<figure class="main-grid-tile">
+		{
+			Component ? (
+				<Component preview={true} />
+			) : (
+				<div class="grid-preview">abc</div>
+			)
+		}
+		<figcaption>{name}</figcaption>
+	</figure>
+</a>

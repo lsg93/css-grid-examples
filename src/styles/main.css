@@ -1,3 +1,21 @@
 main {
-    color : red;
+    display : grid;
+    place-content: center;
+    padding: 0 0.5em;
+    min-height: 100vh;
+}
+
+section.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(240px, 1fr));
+    padding: 1em 0.5em;
+}
+
+@media (max-width : 960px) {
+    section.grid-container {
+        background-color: red;
+        /* display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, minmax(120px, 1fr)); */
+    }
 }
