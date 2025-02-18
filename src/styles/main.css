@@ -7,7 +7,7 @@ main {
 
 section.grid-container {
     display: grid;
-    grid-template-columns: repeat(4, minmax(240px, 1fr));
+    grid-template-columns: repeat(3, minmax(240px, 1fr));
     padding: 1em 0.5em;
 }
 

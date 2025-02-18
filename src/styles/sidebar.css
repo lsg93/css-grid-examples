@@ -1,0 +1,30 @@
+.sidebar-layout {
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+    grid-template-areas:
+    "aside header"
+    "aside body"
+    "aside body"
+}
+
+.sidebar-layout.preview {
+    border : 1px solid black;
+    padding: 24px;
+    margin-bottom: 8px;
+}
+
+.sidebar-layout header {
+    border: 1px solid black;
+    grid-area: header
+}
+.sidebar-layout aside {
+    border : 1px solid black;
+    border-right : 0px;
+    grid-area: aside
+}
+.sidebar-layout section {
+    border: 1px solid black;
+    border-top : 0px;
+    grid-area: body
+}

@@ -1,0 +1,10 @@
+---
+import "../../styles/sidebar.css";
+const { preview = false } = Astro.props;
+---
+
+<section class={`sidebar-layout ${preview ? "preview" : ""}`}>
+	<header>H</header>
+	<aside>L</aside>
+	<section>B</section>
+</section>

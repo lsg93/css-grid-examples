@@ -1,0 +1,25 @@
+---
+// This is a static version of a masonry layout,
+// With no need for JS as we will know the item heights ahead of time.
+import "../../../styles/masonry.css";
+
+const items = [
+	"tall",
+	"short",
+	"short",
+	"tall",
+	"short",
+	"short",
+	"medium",
+	"tall",
+	"short",
+];
+---
+
+<section class="masonry-layout-static preview">
+	{
+		items.map((height) => (
+			<section class={`masonry-item ${height}`}>{height[0]}</section>
+		))
+	}
+</section>

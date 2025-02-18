@@ -1,4 +1,4 @@
-.holy-grail {
+.holy-grail-layout {
     border-collapse: collapse;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -9,18 +9,32 @@
     "footer footer footer"
 }
 
-.holy-grail.preview {
+.holy-grail-layout.preview {
     border : 1px solid black;
     padding: 24px;
     margin-bottom: 8px;
 }
 
-.holy-grail > * {
-    border : 1px solid black;
+.holy-grail-layout header { 
+    border: 1px solid black;
+    grid-area: header; 
 }
 
-.holy-grail header { grid-area: header; }
-.holy-grail aside:first-of-type { grid-area: left; }
-.holy-grail main { grid-area: body; }
-.holy-grail aside:last-of-type { grid-area: right; }
-.holy-grail footer { grid-area: footer; }
+.holy-grail-layout aside:first-of-type {
+    border-left: 1px solid black; 
+    border-right: 1px solid black; 
+    grid-area: left; 
+}
+
+.holy-grail-layout main { grid-area: body; }
+
+.holy-grail-layout aside:last-of-type {
+    border-left: 1px solid black; 
+    border-right: 1px solid black;  
+    grid-area: right; 
+}
+
+.holy-grail-layout footer { 
+    grid-area: footer; 
+    border: 1px solid black;
+}

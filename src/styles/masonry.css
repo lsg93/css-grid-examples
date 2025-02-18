@@ -1,0 +1,24 @@
+/** Preview */
+
+.masonry-layout-static {
+    display : grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(33% - 8px), 1fr));
+    grid-auto-rows: 35px;
+    gap : 8px;
+}
+
+.masonry-layout-static.preview {
+    border : 1px solid black;
+    padding: 24px;
+    margin-bottom: 8px;
+}
+
+.masonry-layout-static .masonry-item {
+    border: 1px solid black;
+}
+
+.masonry-item.tall { grid-row: span 3; }
+.masonry-item.medium {grid-row: span 2; }
+.masonry-item.short {grid-row: span 1; }
+
+/** Main */

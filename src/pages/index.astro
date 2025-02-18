@@ -1,7 +1,9 @@
 ---
-import HolyGrail from "../components/grids/HolyGrail.astro";
-import MainGridTile from "../components/MainGridTile.astro";
 import Layout from "../layouts/Layout.astro";
+import MainGridTile from "../components/MainGridTile.astro";
+import HolyGrail from "../components/grids/HolyGrail.astro";
+import Sidebar from "../components/grids/Sidebar.astro";
+import MasonryStatic from "../components/grids/masonry/MasonryStatic.astro";
 
 type MainGridTileData = {
 	name: string;
@@ -11,9 +13,8 @@ type MainGridTileData = {
 
 const grids: MainGridTileData[] = [
 	{ name: "Holy Grail", Component: HolyGrail, link: "/holy-grail" },
-	{ name: "Sidebar", Component: "", link: "/sidebar" },
-	{ name: "Masonry", Component: "", link: "/right-sidebar" },
-	{ name: "Columns", Component: "", link: "/columns" },
+	{ name: "Sidebar", Component: Sidebar, link: "/sidebar" },
+	{ name: "Masonry", Component: MasonryStatic, link: "/masonry" },
 ];
 ---
 
