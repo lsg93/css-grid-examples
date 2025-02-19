@@ -1,32 +1,35 @@
+.main-grid-tile-container {
+    display: grid;
+    row-gap: 1rem;
+    grid-template-rows: minmax(auto, 4fr) auto;
+    height: 100%;
+    width: 100%;
+}
+
 .main-grid-tile-link {
-    margin-top: 24px;
+    margin-top: 1.5rem;
 }
 
 .main-grid-tile {
-    display: grid;
-    grid-template-rows: 4fr 1fr;
-}
-
-.main-grid-tile figcaption {
-    text-align: center;
+    margin : 0;
 }
 
 .main-grid-tile .preview {
-   width: 240px;
-   height: 240px; 
+    height: 100%;
+    width: 100%;
 }
 
 .main-grid-tile .preview > main {
     border : 1px solid black;
-    padding: 24px;
+    padding: 1.5rem;
 }
 
 .grid-preview {
+    height: 100%;
+    aspect-ratio: 1/1;
     cursor: pointer;
 }
 
 .grid-preview > *:first-child {
-    border : 1px solid black;
-    padding: 24px;
-    margin-bottom: 24px;
+    height: 100%;
 }

@@ -3,22 +3,22 @@ import "../styles/tile.css";
 const { name, Component, link } = Astro.props;
 ---
 
-<div>
-	<figure class="main-grid-tile">
-		{
-			Component ? (
-				<div class="grid-preview" data-href={link}>
-					<Component preview={true} />
-				</div>
-			) : (
-				<div class="grid-preview">abc</div>
-			)
-		}
-		<figcaption class="main-grid-tile-link">
+<section class="main-grid-tile-container">
+	{
+		Component ? (
+			<section class="grid-preview" data-href={link}>
+				<Component preview={true} />
+			</section>
+		) : (
+			<div class="grid-preview">abc</div>
+		)
+	}
+	<section>
+		<span class="main-grid-tile-link">
 			<a href={link}>{name}</a>
-		</figcaption>
-	</figure>
-</div>
+		</span>
+	</section>
+</section>
 
 <script>
 	const previewContainers = [
