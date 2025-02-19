@@ -24,3 +24,9 @@
 .grid-preview {
     cursor: pointer;
 }
+
+.grid-preview > *:first-child {
+    border : 1px solid black;
+    padding: 24px;
+    margin-bottom: 24px;
+}

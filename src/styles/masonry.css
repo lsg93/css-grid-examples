@@ -7,12 +7,6 @@
     gap : 8px;
 }
 
-.masonry-layout-static.preview {
-    border : 1px solid black;
-    padding: 24px;
-    margin-bottom: 8px;
-}
-
 .masonry-layout-static .masonry-item {
     border: 1px solid black;
 }

@@ -9,12 +9,6 @@
     "footer footer footer"
 }
 
-.holy-grail-layout.preview {
-    border : 1px solid black;
-    padding: 24px;
-    margin-bottom: 8px;
-}
-
 .holy-grail-layout header { 
     border: 1px solid black;
     grid-area: header; 

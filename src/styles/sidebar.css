@@ -8,12 +8,6 @@
     "aside body"
 }
 
-.sidebar-layout.preview {
-    border : 1px solid black;
-    padding: 24px;
-    margin-bottom: 8px;
-}
-
 .sidebar-layout header {
     border: 1px solid black;
     grid-area: header
