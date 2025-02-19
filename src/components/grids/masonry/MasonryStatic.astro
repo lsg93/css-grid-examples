@@ -3,23 +3,18 @@
 // With no need for JS as we will know the item heights ahead of time.
 import "../../../styles/masonry.css";
 
+// If you look at the array as a column, each column's span adds up to 6 - which is the number of rows in the grid.
 const items = [
-	"tall",
-	"short",
-	"short",
-	"tall",
-	"short",
-	"short",
-	"medium",
-	"tall",
-	"short",
+	"tall", "short", "medium",
+	"medium", "tall", "tall",
+	"short", "medium", "short",
 ];
 ---
 
 <section class="masonry-layout-static preview">
 	{
-		items.map((height) => (
-			<section class={`masonry-item ${height}`}>{height[0]}</section>
+		items.map((height, i) => (
+			<section class={`masonry-item ${height}`}>&nbsp;</section>
 		))
 	}
 </section>

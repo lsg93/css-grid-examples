@@ -2,8 +2,10 @@
 
 .masonry-layout-static {
     display : grid;
+    /** 3 columns with respect to gap */
     grid-template-columns: repeat(auto-fill, minmax(calc(33% - 8px), 1fr));
-    grid-auto-rows: 35px;
+    /** 6 rows, so that we can fit a combination of items of spans adding up to 6 rows long in each column */
+    grid-template-rows: repeat(6, 1fr);
     gap : 8px;
 }
 
