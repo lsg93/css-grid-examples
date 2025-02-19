@@ -1,7 +1,5 @@
 .main-grid-tile-link {
-    display : block;
-    height : 100%;
-    width: 100%;
+    margin-top: 24px;
 }
 
 .main-grid-tile {
@@ -21,5 +19,8 @@
 .main-grid-tile .preview > main {
     border : 1px solid black;
     padding: 24px;
-    margin-bottom: 24px;
+}
+
+.grid-preview {
+    cursor: pointer;
 }

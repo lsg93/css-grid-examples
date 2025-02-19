@@ -3,15 +3,32 @@ import "../styles/tile.css";
 const { name, Component, link } = Astro.props;
 ---
 
-<a href={link} class="main-grid-tile-link">
+<div>
 	<figure class="main-grid-tile">
 		{
 			Component ? (
-				<Component preview={true} />
+				<div class="grid-preview" data-href={link}>
+					<Component preview={true} />
+				</div>
 			) : (
 				<div class="grid-preview">abc</div>
 			)
 		}
-		<figcaption>{name}</figcaption>
+		<figcaption class="main-grid-tile-link">
+			<a href={link}>{name}</a>
+		</figcaption>
 	</figure>
-</a>
+</div>
+
+<script>
+	const previewContainers = [
+		...document.querySelectorAll(".grid-preview"),
+	] as HTMLElement[];
+
+	previewContainers.forEach((container) => {
+		container.addEventListener("click", () => {
+			const { href = "" } = container.dataset;
+			if (href) window.location.href = href;
+		});
+	});
+</script>
