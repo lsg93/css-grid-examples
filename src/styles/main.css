@@ -14,9 +14,24 @@ section.grid-container {
 
 @media (max-width : 960px) {
     section.grid-container {
-        background-color: red;
-        /* display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, minmax(120px, 1fr)); */
+        grid-template-columns: repeat(2, minmax(16rem, 1fr));
+        row-gap: 1rem;
+    }
+
+    section.grid-container > *:last-of-type {
+        grid-column: 1 / -1; /** Span both columns  */
+        width: 50%;
+        margin : 0 auto;
+    }
+}
+
+@media (max-width : 568px) {
+    section.grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    }
+
+    section.grid-container > *:last-of-type {
+        grid-column: auto;
+        width : 100%;
     }
 }
