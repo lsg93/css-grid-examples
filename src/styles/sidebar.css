@@ -9,16 +9,16 @@
 }
 
 .sidebar-layout header {
-    border: 1px solid black;
+    border: 1px solid var(--background-color-primary);
     grid-area: header
 }
 .sidebar-layout aside {
-    border : 1px solid black;
+    border : 1px solid var(--background-color-primary);
     border-right : 0px;
     grid-area: aside
 }
 .sidebar-layout section {
-    border: 1px solid black;
+    border: 1px solid var(--background-color-primary);
     border-top : 0px;
     grid-area: body
 }

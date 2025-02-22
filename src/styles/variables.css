@@ -1,0 +1,24 @@
+:root {
+    --background-color-primary: #e8e8e8;
+    --background-color-secondary: #d1d1d1;
+    --background-color-tertiary: #2b2b2b;
+    --grid-background-color-1: #dc8904;
+    --grid-background-color-2: #e26e08;
+    --grid-background-color-3: #c45d4f;
+    --grid-background-color-4: #ad2f05;
+    --text-color-primary: #000000;
+}
+
+@media (prefers-color-scheme : dark) {
+    :root {
+        --background-color-primary: #161616;
+        --background-color-secondary: #2e2e2e;
+        --background-color-tertiary: #d3d3d3;
+        --grid-background-color-1: #fba824;
+        --grid-background-color-2: #f7831d;
+        --grid-background-color-3: #b0483b;
+        --grid-background-color-4: #fa7b4f;
+        --text-color-primary: #ffffff;
+        --text-color-secondary: #ededed;
+    }
+}

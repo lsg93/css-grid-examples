@@ -1,7 +1,11 @@
+body  {
+    background-color: var(--background-color-primary);
+    color: var(--text-color-primary);
+}
+
 main {
     display : grid;
     grid-template-rows: 4rem auto 4rem;
-    padding: 0 0.5rem;
     min-height: 100vh;
 }
 

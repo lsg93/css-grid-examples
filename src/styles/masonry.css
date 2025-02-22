@@ -10,7 +10,7 @@
 }
 
 .masonry-layout-static .masonry-item {
-    border: 1px solid black;
+    border: 1px solid var(--background-color-primary);
 }
 
 .masonry-item.tall { grid-row: span 3; }

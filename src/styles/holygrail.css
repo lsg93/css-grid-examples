@@ -10,25 +10,25 @@
 }
 
 .holy-grail-layout header { 
-    border: 1px solid black;
+    border: 1px solid var(--background-color-primary);
     grid-area: header; 
 }
 
 .holy-grail-layout aside:first-of-type {
-    border-left: 1px solid black; 
-    border-right: 1px solid black; 
+    border-left: 1px solid var(--background-color-primary); 
+    border-right: 1px solid var(--background-color-primary); 
     grid-area: left; 
 }
 
 .holy-grail-layout main { grid-area: body; }
 
 .holy-grail-layout aside:last-of-type {
-    border-left: 1px solid black; 
-    border-right: 1px solid black;  
+    border-left: 1px solid var(--background-color-primary); 
+    border-right: 1px solid var(--background-color-primary);  
     grid-area: right; 
 }
 
 .holy-grail-layout footer { 
     grid-area: footer; 
-    border: 1px solid black;
+    border: 1px solid var(--background-color-primary);
 }

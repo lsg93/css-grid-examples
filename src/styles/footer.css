@@ -1,4 +1,5 @@
 footer.footer-container {
+    background-color: var(--background-color-secondary);
     display: flex;
     justify-content: end;
 }

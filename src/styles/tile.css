@@ -4,6 +4,8 @@
     grid-template-rows: minmax(auto, 4fr) auto;
     height: 100%;
     width: 100%;
+    background-color: var(--background-color-secondary);
+    border-radius: 0.1rem;
 }
 
 .main-grid-tile-link {
@@ -20,7 +22,7 @@
 }
 
 .main-grid-tile .preview > main {
-    border : 1px solid black;
+    border : 1px solid var(--background-color-primary);
     padding: 1.5rem;
 }
 
@@ -28,6 +30,7 @@
     height: 100%;
     aspect-ratio: 1/1;
     cursor: pointer;
+    background-color: var(--background-color-tertiary);
 }
 
 .grid-preview > *:first-child {
