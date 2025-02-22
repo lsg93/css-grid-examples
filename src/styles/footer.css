@@ -1,0 +1,9 @@
+footer.footer-container {
+    display: flex;
+    justify-content: end;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+}
